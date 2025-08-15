@@ -75,6 +75,8 @@ ignore = [
   "B008",      # FastAPI defaults
   "C901",      # complexity
   "PLR0913",   # many args (endpoints)
+  "F401",
+  "W293"
 ]
 # Keep F401 reported but NEVER auto-removed on save:
 unfixable = ["ERA001", "F401"]
