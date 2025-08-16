@@ -1,40 +1,81 @@
 {
-"python.defaultInterpreterPath": "./.venv/Scripts/python.exe",
-"python.languageServer": "Pylance",
+    "python.defaultInterpreterPath": "./.venv/Scripts/python.exe",
+    "python.languageServer": "Pylance",
 
-"[python]": {
-"editor.formatOnSave": true,
-"editor.defaultFormatter": "ms-python.black-formatter",
-"editor.codeActionsOnSave": {
-"source.organizeImports": "explicit",
-"source.fixAll.ruff": "explicit"
-}
-},
+    "[python]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit",
+        "source.fixAll.ruff": "explicit"
+      }
+    },
 
-"black-formatter.server.enabled": false,
-"black-formatter.path": ["./.venv/Scripts/black.exe"],
-"black-formatter.args": ["--line-length=120"],
-"black-formatter.importStrategy": "fromEnvironment",
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-"ruff.path": ["./.venv/Scripts/ruff.exe"],
-"ruff.importStrategy": "fromEnvironment",
+    "black-formatter.server.enabled": false,
+    "black-formatter.path": ["./.venv/Scripts/black.exe"],
+    "black-formatter.args": ["--line-length=120"],
+    "black-formatter.importStrategy": "fromEnvironment",
 
-"editor.rulers": [120],
-"editor.tabSize": 4,
-"editor.insertSpaces": true,
-"files.trimTrailingWhitespace": true,
-"files.insertFinalNewline": true,
-"files.trimFinalNewlines": true,
+    "ruff.path": ["./.venv/Scripts/ruff.exe"],
+    "ruff.importStrategy": "fromEnvironment",
 
-"python.analysis.typeCheckingMode": "basic",
-"python.analysis.autoImportCompletions": true,
-"python.analysis.inlayHints.functionReturnTypes": true,
-"python.analysis.inlayHints.variableTypes": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.fixAll.eslint": "explicit",
+      "source.addMissingImports": "explicit"
+    },
+    "editor.rulers": [120],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
 
-"python.terminal.activateEnvironment": true,
-"python.logging.level": "error",
-"python.analysis.indexing": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
 
-"telemetry.telemetryLevel": "off",
-"security.workspace.trust.enabled": true
-}
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.terminal.activateEnvironment": true,
+    "python.logging.level": "error",
+    "python.analysis.indexing": true,
+
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    ],
+    "eslint.useFlatConfig": true,
+    "eslint.options": {
+      "overrideConfigFile": ".eslint.config.mjs"
+    },
+
+    "prettier.tabWidth": 2,
+    "prettier.useTabs": false,
+    "prettier.semi": true,
+    "prettier.singleQuote": false,
+    "prettier.jsxSingleQuote": false,
+    "prettier.trailingComma": "es5",
+    "prettier.arrowParens": "always",
+
+    "typescript.tsdk": "node_modules/typescript/lib",
+
+    "telemetry.telemetryLevel": "off",
+    "security.workspace.trust.enabled": true
+  }
